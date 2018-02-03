@@ -1,5 +1,5 @@
 const Command = require('../../base/Command.js');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class ServerInfo extends Command {
   constructor(client) {
@@ -15,7 +15,7 @@ class ServerInfo extends Command {
   }
 
   async run(message, args, level) {
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setAuthor(message.guild.name, message.guild.iconURL)
       .setColor(3447003)
       .setDescription(`Owner: ${message.guild.owner.user.tag} (${message.guild.owner.id})`)

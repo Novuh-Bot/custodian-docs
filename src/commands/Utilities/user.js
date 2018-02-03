@@ -1,6 +1,6 @@
 const Command = require('../../base/Command.js');
 const moment = require('moment');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class User extends Command {
   constructor(client) {
@@ -30,7 +30,7 @@ class User extends Command {
       }
   
       const target = await this.verifyMember(message.guild, member);
-      const embed = new RichEmbed()
+      const embed = new MessageEmbed()
         .setThumbnail(target.user.displayAvatarURL)
         .setColor(target.highestRole.color || 0)
         .setAuthor(`${target.displayName} (${target.user.id})`, target.user.displayAvatarURL)
