@@ -14,10 +14,9 @@ class Blacklist extends Moderation {
   }
 
   async run(message, args, level) {
-    const settings = this.client.settings.get(message.guild.id);
-    const serverLang = `${settings.lang}`;
-    const lang = require(`../../languages/${serverLang}/${this.help.category}/${this.help.category}.json`);
-    const generalErr = require(`../../languages/${serverLang}/general.json`);
+    const { lang } = this.client.settings.get(message.guild.id);
+    const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);
+    const generalErr = require(`../../languages/${lang}/general.json`);
     
     if (!args[0] && !message.flags.length) message.flags.push('list');
     if (!message.flags.length) {
