@@ -1,5 +1,5 @@
 const Command = require('../../base/Command.js');
-const { Attachment } = require('discord.js');
+const { MessageAttachment } = require('discord.js');
 
 class Thesearch extends Command {
   constructor(client) {
@@ -16,7 +16,7 @@ class Thesearch extends Command {
     const text = args.slice(1).join(' ');
     if (text.length < 1) return message.channel.send('What\'s the guy saying?');
     try {
-      await message.channel.send(new Attachment(await this.client.api.theSearch((message.mentions.users.first() || message.author).displayAvatarURL, text), 'thesearch.png'));
+      await message.channel.send(new MessageAttachment(await this.client.api.theSearch((message.mentions.users.first() || message.author).displayAvatarURL, text), 'thesearch.png'));
     } catch (error) {
       throw error;
     }

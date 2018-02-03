@@ -1,5 +1,5 @@
 const Social = require('../../base/Social.js');
-const { Attachment } = require('discord.js');
+const { MessageAttachment } = require('discord.js');
 
 class Beautiful extends Social {
   constructor(client) {
@@ -15,7 +15,7 @@ class Beautiful extends Social {
 
   async run(message, args, level) {
     try {
-      await message.channel.send(new Attachment(await this.client.api.beautiful((message.mentions.users.first() || message.author).displayAvatarURL), 'beautiful.png'));
+      await message.channel.send(new MessageAttachment(await this.client.api.beautiful((message.mentions.users.first() || message.author).displayAvatarURL), 'beautiful.png'));
     } catch (error) {
       throw error;
     }
