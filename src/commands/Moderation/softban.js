@@ -1,6 +1,6 @@
 const Moderation = require('../../base/Moderation.js');
 
-class Ban extends Moderation {
+class Softban extends Moderation {
   constructor(client) {
     super(client, {
       name: 'softban',

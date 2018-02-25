@@ -159,37 +159,6 @@
     "meta": {
       "range": [
         90,
-        523
-      ],
-      "filename": "softban.js",
-      "lineno": 4,
-      "columnno": 2,
-      "path": "C:\\Users\\OGNovuh\\Desktop\\Coding\\v12\\src\\commands\\Moderation",
-      "code": {
-        "id": "astnode100005732",
-        "name": "Ban",
-        "type": "MethodDefinition",
-        "paramnames": [
-          "client"
-        ]
-      },
-      "vars": {
-        "": null
-      }
-    },
-    "undocumented": true,
-    "name": "Ban",
-    "longname": "Ban",
-    "kind": "class",
-    "scope": "global",
-    "params": [],
-    "$longname": "Ban"
-  },
-  {
-    "comment": "",
-    "meta": {
-      "range": [
-        90,
         491
       ],
       "filename": "ban.js",
@@ -1182,14 +1151,14 @@
     "meta": {
       "range": [
         91,
-        470
+        490
       ],
-      "filename": "mute.js",
+      "filename": "unmute.js",
       "lineno": 4,
       "columnno": 2,
       "path": "C:\\Users\\OGNovuh\\Desktop\\Coding\\v12\\src\\commands\\Moderation",
       "code": {
-        "id": "astnode100004769",
+        "id": "astnode100005995",
         "name": "Mute",
         "type": "MethodDefinition",
         "paramnames": [
@@ -1213,14 +1182,14 @@
     "meta": {
       "range": [
         91,
-        490
+        470
       ],
-      "filename": "unmute.js",
+      "filename": "mute.js",
       "lineno": 4,
       "columnno": 2,
       "path": "C:\\Users\\OGNovuh\\Desktop\\Coding\\v12\\src\\commands\\Moderation",
       "code": {
-        "id": "astnode100005995",
+        "id": "astnode100004769",
         "name": "Mute",
         "type": "MethodDefinition",
         "paramnames": [
@@ -2250,6 +2219,37 @@
     "scope": "global",
     "params": [],
     "$longname": "Slots"
+  },
+  {
+    "comment": "",
+    "meta": {
+      "range": [
+        94,
+        527
+      ],
+      "filename": "softban.js",
+      "lineno": 4,
+      "columnno": 2,
+      "path": "C:\\Users\\OGNovuh\\Desktop\\Coding\\v12\\src\\commands\\Moderation",
+      "code": {
+        "id": "astnode100005732",
+        "name": "Softban",
+        "type": "MethodDefinition",
+        "paramnames": [
+          "client"
+        ]
+      },
+      "vars": {
+        "": null
+      }
+    },
+    "undocumented": true,
+    "name": "Softban",
+    "longname": "Softban",
+    "kind": "class",
+    "scope": "global",
+    "params": [],
+    "$longname": "Softban"
   },
   {
     "comment": "",
