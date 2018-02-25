@@ -16,6 +16,10 @@ class Search extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Query} args A query to search for on YouTube.  
+   */
   async run(message, args, level) {
     const search = args.join(' ');
     try {

@@ -13,6 +13,11 @@ class Ban extends Moderation {
     });
   }
 
+  /**
+   * 
+   * @param {Member} args The member to ban.  
+   * @param {Reason} args The reason for the ban.
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

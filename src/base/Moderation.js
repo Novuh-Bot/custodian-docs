@@ -1,5 +1,9 @@
 const Command = require('./Command.js');
 
+/**
+ * Moderation Class
+ * @extends Command
+ */
 class Moderation extends Command {
   
   constructor(client, options) {

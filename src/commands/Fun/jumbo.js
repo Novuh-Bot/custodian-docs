@@ -16,6 +16,10 @@ class Jumbo extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Emoji} args The emoji sent alongside the command. 
+   */
   async run(message, args, level) {
     try {
       const emote = discord.Util.parseEmoji(args[0]);

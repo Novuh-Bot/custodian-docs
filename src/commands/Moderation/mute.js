@@ -14,6 +14,11 @@ class Mute extends Moderation {
     });
   }
 
+  /**
+   * 
+   * @param {Member} args The member to mute.  
+   * @param {Reason} args The reason for the mute.
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars no-useless-escape
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

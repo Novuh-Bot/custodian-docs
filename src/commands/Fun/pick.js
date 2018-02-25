@@ -13,6 +13,10 @@ class Pick extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Options} args An array of choices for the bot to choose from. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

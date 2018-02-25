@@ -15,6 +15,10 @@ class Exec extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Script} args The script to execute. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     exec(`${args.join(' ')}`, (error, stdout) => {
       const response = (error || stdout);

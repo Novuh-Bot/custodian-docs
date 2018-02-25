@@ -14,6 +14,10 @@ class Say extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Text} args The text to send to the channel. 
+   */
   async run(message, args, level) {
     if (args.length < 1) throw 'You need to give the bot a message to send.';
     try {

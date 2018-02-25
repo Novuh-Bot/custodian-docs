@@ -1,6 +1,11 @@
 const Command = require('./Command.js');
 const moment = require('moment');
 const ms = require('ms');
+
+/**
+ * Social Class
+ * @extends Command
+ */
 class Social extends Command {
 
   constructor(client, options) {

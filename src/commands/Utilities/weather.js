@@ -18,6 +18,10 @@ class Weather extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Location} args The location to get the weather of. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     try {
       const { lang } = this.client.settings.get(message.guild.id);

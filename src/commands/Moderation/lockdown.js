@@ -15,6 +15,10 @@ class Lockdown extends Moderation {
     });
   }
 
+  /**
+   * 
+   * @param {Time} args The time to lockdown the channel in milliseconds.  
+   */
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

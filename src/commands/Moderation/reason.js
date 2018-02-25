@@ -13,6 +13,11 @@ class Reason extends Moderation {
     });
   }
 
+  /**
+   * 
+   * @param {Case} args The case to update.  
+   * @param {Reason} args The new reason.
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     const caseNumber  =  args.shift();
     const newReason   =  args.join(' ');

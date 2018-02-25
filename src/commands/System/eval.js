@@ -13,6 +13,10 @@ class Eval extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Code} args The code to eval. 
+   */
   async run(message, [code], level) { // eslint-disable-line no-unused-vars     
     const stopwatch = new Stopwatch();
     let syncTime, asyncTime;    

@@ -16,6 +16,10 @@ class Award extends Social {
     });
   }
 
+  /**
+   * 
+   * @param {Amount} args The amount of points to award to the user. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     try {
       const { lang } = this.client.settings.get(message.guild.id);

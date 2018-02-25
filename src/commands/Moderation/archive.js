@@ -14,6 +14,10 @@ class Archive extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Messages} args The number of messages to archive. 
+   */
   async run(message, args, level) {
     const amount = args[0];
     try {

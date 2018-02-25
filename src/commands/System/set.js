@@ -13,6 +13,12 @@ class Set extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Action} args What to do with the key. <view/get/add/edit>
+   * @param {Key} args What key to view/get/add/edit.
+   * @param {Value} args What to set the value of the key to.
+   */
   async run(message, [action, key, ...value], level) {
 
     const settings = this.client.settings.get(message.guild.id);

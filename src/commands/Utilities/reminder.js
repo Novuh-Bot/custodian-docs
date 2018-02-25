@@ -27,6 +27,11 @@ class Reminder extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Reminder} args What you'd like the bot to remind you of.
+   * @param {Time} args When the bot should remind you. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     if (args.length === 0) {
       let reminders = this.client.reminders.findAll('id', message.author.id).map(r => `${r.reminder} - ${moment(r.reminderTimestamp).fromNow()}`);

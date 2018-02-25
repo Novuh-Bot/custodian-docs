@@ -15,6 +15,10 @@ class Reply extends Support {
     });
   }
 
+  /**
+   * 
+   * @param {ReplyMsg} args What will be sent to the user. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

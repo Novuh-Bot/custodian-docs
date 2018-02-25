@@ -1,5 +1,9 @@
 const Command = require('./Command.js');
 
+/**
+ * Support Class
+ * @extends Command
+ */
 class Support extends Command {
 
   constructor(client, options) {

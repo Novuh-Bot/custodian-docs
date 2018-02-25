@@ -13,6 +13,10 @@ class Yoda extends Social {
     });
   }
 
+  /**
+   * 
+   * @param {Text} args The text to translate into Yoda speech.
+   */  
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     try {
       const { lang } = this.client.settings.get(message.guild.id);

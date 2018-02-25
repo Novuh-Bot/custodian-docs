@@ -12,6 +12,10 @@ class Volume extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Volume} args The volume to set the playback to.
+   */
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

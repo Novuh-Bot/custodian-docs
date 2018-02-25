@@ -14,6 +14,10 @@ class Urban extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Word} args The word to search on Urban Dictionary. 
+   */
   async run(message, args, level) {
     let resultNum;
     if (parseInt(args[args.length-1], 10)) {

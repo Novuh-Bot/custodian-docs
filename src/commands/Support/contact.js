@@ -13,6 +13,10 @@ class Contact extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {SupportMsg} args The message to send to the support staff. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     if (message.guild) return message.reply('This command can only be used in DM\'s');
     const msg = args.join(' ');

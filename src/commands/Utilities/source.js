@@ -13,6 +13,11 @@ class Source extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Category} args The command category.
+   * @param {Command} args The command to get. 
+   */
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

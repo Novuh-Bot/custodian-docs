@@ -14,6 +14,10 @@ class User extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Member} args The member you'd like to get information on. 
+   */
   async run(message, args, level) { // eslint-disable-line no-unused-vars
     try {
       const user = args.join(' ') || message.author.id;

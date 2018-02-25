@@ -22,7 +22,7 @@ class Fight extends Command {
       name: 'fight',
       description: 'Sends a fight message.',
       extended: 'Mention a user to \'fight\' them.',
-      usage: 'fight <mention>',
+      usage: 'fight <member:user>',
       aliases: [],
       category: 'Fun',
       botPerms: ['SEND_MESSAGES'],
@@ -30,6 +30,10 @@ class Fight extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Member} args A member to fight with.
+   */  
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

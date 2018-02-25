@@ -1,3 +1,7 @@
+/**
+ * Command Class
+ * @extends Command
+ */
 class Command {
   constructor(client, {
     name = null,

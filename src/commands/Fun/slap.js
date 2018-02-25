@@ -12,7 +12,10 @@ class Slap extends Command {
       permLevel: 'User'
     });
   }
-
+  /**
+   * 
+   * @param {Member} args A member to slap.
+   */  
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

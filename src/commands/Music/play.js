@@ -19,6 +19,10 @@ class Play extends Command {
     });
   }
 
+  /**
+   * 
+   * @param {Song} args A link to a YouTube video to play.  
+   */
   async run(message, args, level) {
     const { lang } = this.client.settings.get(message.guild.id);
     const cmdLang = require(`../../languages/${lang}/${this.help.category}/${this.help.category}.json`);

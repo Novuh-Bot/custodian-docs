@@ -15,6 +15,10 @@ class Respect extends Social {
     });
   }
 
+  /**
+   *  
+   * @param {Member} args A member to create the graphic with. 
+   */
   async run(message, args, level) {
     try {
       await message.channel.send(new MessageAttachment(await this.client.api.respect((message.mentions.users.first() || message.author).displayAvatarURL()), 'respect.png'));  
