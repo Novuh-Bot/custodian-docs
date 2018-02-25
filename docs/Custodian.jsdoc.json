@@ -1303,8 +1303,8 @@
   },
   {
     "kind": "package",
-    "name": "custodian",
-    "longname": "package:custodian",
+    "name": "Custodian",
+    "longname": "package:Custodian",
     "author": "OGNovuh",
     "bugs": {
       "url": "https://github.com/Novuh-Bot/Custodian"
@@ -1443,7 +1443,7 @@
       "url": "git+https://github.com/Novuh-Bot/Custodian.git"
     },
     "version": "2.5.0",
-    "$longname": "package:custodian"
+    "$longname": "package:Custodian"
   },
   {
     "comment": "",

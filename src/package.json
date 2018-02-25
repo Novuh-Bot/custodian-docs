@@ -1,5 +1,5 @@
 {
-  "name": "custodian",
+  "name": "Custodian",
   "version": "2.5.0",
   "description": "Custodian is a utilitarian and moderation bot designed to make moderating your Discord server easier. It features per server settings and a dashboard to keep track of your servers settings.",
   "main": "index.js",
