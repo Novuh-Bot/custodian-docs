@@ -1,5 +1,5 @@
 const Docma = require('docma');
-const Package = require('./package');
+const Package = require('./src/package');
 
 Docma.create()
   .build({
@@ -22,19 +22,19 @@ Docma.create()
       emoji: true
     },
     src: [
-      { readme: './README.md' },
-      { Custodian: './src/*/**/*.js'}
+      { readme: './src/README.md' },
+      { Custodian: './src/*/*/*.js'}
     ],
     dest: './docs',
     debug: true,
-    jsdoc: { package: './package.json' },
+    jsdoc: { package: './src/package.json' },
     template: {
       options: {
         title: Package.name,
         navItems: [
           {
             label: 'Readme',
-            href: './README'
+            href: './src/README'
           },
           {
             label: 'Documentation',
